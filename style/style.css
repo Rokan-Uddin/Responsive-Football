@@ -9,27 +9,42 @@
     font-family: 'Poppins', sans-serif;
     margin: 0px;
  }
+ .link{
+        padding: 10px 24px 10px 24px;
+        text-decoration: none;
+        background-color: #E02C6D;
+        color: #FFFFFF;
+ }
 /* --------------
  header style  
  -------------*/
+header{
+    background-color: #2D25A0;
+}
+/* navbar style  */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 124px 49px 156px;
+}
+.nav-half a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 10px 36px 10px 0px;
+}
+/* header info and banner  */
 .header-container{
     display: flex;
-    background-color: #2D25A0;
     color: #FFFFFF;
     align-items: center;
     margin-bottom: 70px;
-    padding: 67px 140px 86px 156px;
+    padding: 0px 140px 86px 156px;
 }
 .header-info h1{
     font-size: 64px;
     font-weight: 700;
     padding-right: 102px;
-}
-.header-info a{
-    padding: 10px 24px 10px 24px;
-    text-decoration: none;
-    background-color: #E02C6D;
-    color: #FFFFFF;
 }
 .header-banner img{
     width: 556.01px;
@@ -46,6 +61,8 @@ player style
     margin: 0px 210px 0px 180px;
 }
 .player{
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     box-shadow: 5px 7px 30px gray;
 }
@@ -78,14 +95,6 @@ player style
     margin-top: 0px;
     color: #6C6C6C;
 }
-.highlights-details a{
-    width: 172px;
-    padding: 10px 24px 10px 24px;
-    text-decoration: none;
-    background-color: #E02C6D;
-    color: #FFFFFF;
-    font-weight: 500;
-}
 .highlights-details a i{
     height: 24px;
     width: 24px;
@@ -113,7 +122,6 @@ player style
     width: 32px;
     margin: 20px 14px 20px 0px;
     /* background-color: rgba(128, 128, 128, 0.322); */
-
 }
 .footer-icon i{
     width: 16px;
@@ -123,4 +131,40 @@ player style
 }
 .footer-copyright{
     font-size: 18px;
+}
+
+@media only screen and (max-width:688px) {
+     footer{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .header-container {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .header-info h1,.header-banner img{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .players,.highlights-container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px;
+    }
+    .player{
+        align-items: center;
+    }
+    .highlights-details,.highlights-banner{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .highlights-banner img,h1,h2,p{
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
 }
