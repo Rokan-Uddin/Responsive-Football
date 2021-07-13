@@ -7,8 +7,34 @@
  ------------*/
  body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
  }
-
+/* --------------
+ header style  
+ -------------*/
+.header-container{
+    display: flex;
+    background-color: #2D25A0;
+    color: #FFFFFF;
+    align-items: center;
+    margin-bottom: 70px;
+    padding: 67px 140px 86px 156px;
+}
+.header-info h1{
+    font-size: 64px;
+    font-weight: 700;
+    padding-right: 102px;
+}
+.header-info a{
+    padding: 10px 24px 10px 24px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+}
+.header-banner img{
+    width: 556.01px;
+    height: 438px;
+}
 /* -----------
 player style  
 ------------   */
@@ -43,7 +69,13 @@ player style
     display: flex;
     flex-direction: column;
 }
+.highlights-details h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
 .highlights-details p {
+    margin-top: 0px;
     color: #6C6C6C;
 }
 .highlights-details a{
