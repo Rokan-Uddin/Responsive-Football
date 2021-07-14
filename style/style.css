@@ -24,7 +24,6 @@
 header{
     background-color: #2D25A0;
 }
-/* navbar style  */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -36,7 +35,9 @@ header{
     font-weight: 500;
     padding: 10px 36px 10px 0px;
 }
-/* header info and banner  */
+/* -----------
+header info and banner 
+------------------ */
 .header-container{
     display: flex;
     color: #FFFFFF;
@@ -152,7 +153,9 @@ player style
     transition: transform 1s;
     transform: scale(1.5);
 }
-/* tournament summary  */
+/* --------------
+tournament summary 
+------------------ */
 .tournament-summary {
     padding: 30px;
     margin:0px 50px;
@@ -222,6 +225,10 @@ player style
 @media only screen and (max-width:688px) {
     .navbar{
         display: none;
+    }
+    header:hover .header-banner>img {
+        transition: transform 1s;
+        transform: scale(1) ;
     }
     .header-container {
         flex-direction: column;
@@ -339,7 +346,35 @@ player style
         margin-top: 20px;
     }
 }
-/* responsive for ipad device */
-@media only screen ans (min-width:689px) ans (max-width:992px) {
-    
+/* ------------------
+responsive for ipad device 
+---------------------*/
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .navbar{
+        display: none;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+    .header-banner img{
+        padding: 30px;
+    }
+    .players {
+        grid-template-columns:repeat(2,1fr) ;
+        margin: 30px;
+    }
+    .highlights-container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 30px;
+    }
+    .team-container{
+        grid-template-columns: repeat(3,1fr);
+        margin: 30px;
+    }
+    .team-heading {
+        margin: 0px;
+    }
+    .tournament-summary{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
