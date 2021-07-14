@@ -15,6 +15,9 @@
         background-color: #E02C6D;
         color: #FFFFFF;
  }
+ .link>i {
+     padding: 0 10px;
+ }
 /* --------------
  header style  
  -------------*/
@@ -46,10 +49,18 @@ header{
     font-weight: 700;
     padding-right: 102px;
 }
-.header-banner img{
-    width: 556.01px;
+.header-banner>img{
     height: 438px;
 }
+/* transform  and transition style in header  */
+header:hover .header-banner>img {
+    transition: transform 2s;
+    transform: scale(1.2) rotate(45deg);
+}
+/* --------------
+ header style end 
+ -------------*/
+
 /* -----------
 player style  
 ------------   */
@@ -95,14 +106,48 @@ player style
     margin-top: 0px;
     color: #6C6C6C;
 }
-.highlights-details a i{
+.highlights-details a {
+    width: 172px;
+}
+/* .highlights-details a{
     height: 24px;
     width: 24px;
     padding-left: 8px;
-}
+} */
 .highlights-banner img{
     width: 567px;
     height: 427px;
+}
+
+/* ------------- 
+    team style 
+--------------- */
+.team-container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    padding: 100px;
+    box-shadow: 5px 7px 30px gray;
+}
+.team-heading h1{
+    margin: 0px;
+    font-size: 64px;
+    font-weight: 700;
+}
+.team-heading p{
+    font-size: 24px;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.team img{
+    width: 200px;
+}
+.team img:hover{
+    transition: transform 1s;
+    transform: scale(1.5);
 }
 /* ----------------
     footer style 
@@ -120,13 +165,14 @@ player style
 .footer-icon a{
     height: 32px;
     width: 32px;
-    margin: 20px 14px 20px 0px;
-    /* background-color: rgba(128, 128, 128, 0.322); */
+    margin:0px 7px;
+    padding: 10px;
+    border-radius: 50%;
+     background-color: rgba(128, 128, 128, 0.322); */
 }
 .footer-icon i{
     width: 16px;
     height: 12px;
-    /* padding: 10px; */
     color:#969BAB;
 }
 .footer-copyright{
