@@ -179,6 +179,7 @@ player style
     column-gap: 10px;
     padding: 10px;
     border-radius: 20px;
+}
 .details-half p,h4{
     margin: 10px;
 }
@@ -212,6 +213,7 @@ player style
     font-size: 18px;
 }
 
+/* responsive for mobile device  */
 @media only screen and (max-width:688px) {
      footer{
         display: none;
@@ -245,5 +247,92 @@ player style
         margin: 0px;
         width: 100%;
         text-align: center;
+    }
+    .team-container{
+        margin: 0px;
+        flex-direction: column;
+    }
+    .team-heading h1{
+        font-size: 32px;
+    }
+    .team-heading p{
+        padding: 0px;
+        font-size: 24px;
+    }
+    .teams{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .team img{
+        width: 100%;
+    }
+    .tournament-summary{
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* responsive for ipad device */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .navbar{
+        display: none;
+    }
+    .header-container {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .header-info h1,.header-banner img{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px;
+    }
+    .highlights-container{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px;
+    }
+    .player{
+        align-items: center;
+    }
+    .highlights-details,.highlights-banner{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .highlights-banner img,h1,h2,p{
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .team-container{
+        margin: 0px;
+        flex-direction: column;
+    }
+    .team-heading h1{
+        font-size: 32px;
+    }
+    .team-heading p{
+        padding: 0px;
+        font-size: 24px;
+    }
+    .teams{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .team img{
+        width: 100%;
+    }
+    .tournament-summary{
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: repeat(1,1fr);
     }
 }
