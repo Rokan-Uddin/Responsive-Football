@@ -153,12 +153,6 @@ player style
     transform: scale(1.5);
 }
 /* tournament summary  */
-.tournament-summary-title {
-    margin: 0px;
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-}
 .tournament-summary {
     padding: 30px;
     margin:0px 50px;
@@ -172,7 +166,8 @@ player style
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}.tournament-details h3{
+}
+.tournament-details h3{
     font-size: 28px;
     font-weight: 700;
 }
@@ -284,14 +279,15 @@ player style
          height: 248px;
     }
     .team-container{
-        padding: 15px;
-        margin: 15px 15px 30px 15px;
+        padding: 10px;
+        margin: 0px;
         flex-direction: column;
     }
     .team-heading h1{
         font-size: 32px;
     }
     .team-heading p{
+        width: 90%;
         padding: 0px;
         font-size: 16px;
     }
@@ -305,13 +301,30 @@ player style
         width: 100%;
     }
     .tournament-summary{
-        padding: 5px;
+        width: 90%;
+        padding: 0px;
         margin: 0px;
         grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        border:none;
+    }
+    .tournament-details{
+        margin: 0px;
+        padding: 0px;
+        width: 90%;
+    }
+    .tournament-details h3{
+        text-align: center;
     }
     .details{
+        padding: 0px;
+        width: 90%;
         margin: 0px;
-        padding: 10px;
+    }
+    .details:hover{
+        transition: transform 1.5s;
+        transform: scale(.8);
     }
     .details-half>h4, .details-half>p{
         height: 50px;
@@ -327,102 +340,6 @@ player style
     }
 }
 /* responsive for ipad device */
-@media only screen and (min-width:689px) and (max-width:992px) { 
+@media only screen ans (min-width:689px) ans (max-width:992px) {
     
-    .navbar{
-        display: none;
-    }
-    .header-container {
-        flex-direction: column;
-        margin: 0px 16px 47px 15px;
-        padding: 0px;
-    }
-    .header-info h1{
-        margin-left: 15px;
-        width: 278px;
-        text-align: left;
-        font-size: 36px;
-        padding: 121px 66px 30px 0px;
-    } 
-    .header-info a{
-        padding-left: 15px;
-        margin-left: 19px;
-    }
-    .header-banner img{
-        width: 550px;
-        margin: 0px;
-        padding-top: 50px;
-        padding-bottom: 61px;
-        /* padding: 50px 16px 61px 15px; */
-    }
-    .players{
-        grid-template-columns: repeat(2,1fr);
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-    }
-    .highlights-container{
-        grid-template-columns: repeat(1,1fr);
-        margin: 0px;
-    }
-    .player{
-        margin:0px
-    }
-    .player h2{
-        text-align: left;
-    }
-    .highlights-container{
-        margin: 60px 16px 60px 15px;
-    }
-    .highlights-details h1{
-        font-size: 30px;
-        padding: 0px 35px 8px 0px;
-    }
-
-    .highlights-details,.highlights-banner{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .highlights-banner img{
-        width: 328px;
-         height: 248px;
-    }
-    .team-container{
-        padding: 15px;
-        margin: 15px 15px 30px 15px;
-        flex-direction: column;
-    }
-    .team-heading h1{
-        font-size: 32px;
-    }
-    .team-heading p{
-        padding: 0px;
-        font-size: 16px;
-    }
-    .teams{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        grid-template-columns: repeat(3,1fr);
-    }
-    .team img{
-        width: 100%;
-    }
-    .tournament-summary{
-        padding: 5px;
-        margin: 0px;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .details{
-        margin: 0px;
-        padding: 0px;
-    }
-    .details-half>h4, .details-half>p{
-        height: 50px;
-    }
-    .footer-logo img{
-        width: 270px;
-        height: 63px;
-    }
 }
