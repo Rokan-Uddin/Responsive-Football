@@ -54,7 +54,7 @@ header info and banner
     height: 438px;
 }
 /* transform  and transition style in header  */
-header:hover .header-banner>img {
+.header-banner:hover{
     transition: transform 2s;
     transform: scale(1.2) rotate(45deg);
 }
@@ -225,10 +225,6 @@ tournament summary
 @media only screen and (max-width:688px) {
     .navbar{
         display: none;
-    }
-    header:hover .header-banner>img {
-        transition: transform 1s;
-        transform: scale(1) ;
     }
     .header-container {
         flex-direction: column;
