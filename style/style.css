@@ -53,7 +53,7 @@ header info and banner
 .header-banner>img{
     height: 438px;
 }
-/* transform  and transition style in header  */
+/*add transform  and transition in header  */
 .header-banner:hover{
     transition: transform 2s;
     transform: scale(1.2) rotate(45deg);
@@ -87,7 +87,6 @@ player style
     height: 256px;
 }
 .player-details{
-    /* width: 300px; */
     width: 100%;
 }
 /* ----------------------
@@ -154,7 +153,7 @@ player style
     transform: scale(1.5);
 }
 /* --------------
-tournament summary 
+tournament summary  style
 ------------------ */
 .tournament-summary {
     padding: 30px;
@@ -221,11 +220,14 @@ tournament summary
     font-size: 18px;
 }
 
-/* responsive for mobile device  */
+/* ------------------
+Media query to make responsive
+-------------------- */
 @media only screen and (max-width:688px) {
     .navbar{
         display: none;
     }
+    /* minimize the size,padding,margin etc to be responsive in mobile device */
     .header-container {
         flex-direction: column;
         margin: 0px 16px 47px 15px;
@@ -249,6 +251,7 @@ tournament summary
         padding-top: 50px;
         padding-bottom: 61px;
     }
+    /* changed 3 column to 1 column in grid row */
     .players{
         grid-template-columns: repeat(1,1fr);
         row-gap: 24px;
@@ -261,6 +264,7 @@ tournament summary
     .player h2{
         text-align: left;
     }
+    /* changed flex direction and align the child element */
     .highlights-container{
         display: flex;
         flex-direction: column;
@@ -281,10 +285,17 @@ tournament summary
         width: 328px;
          height: 248px;
     }
+    /* changed 4 column to 2 column in a row  */
     .team-container{
         padding: 10px;
         margin: 0px;
         flex-direction: column;
+    }
+    .teams{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        grid-template-columns: repeat(2,1fr);
     }
     .team-heading h1{
         font-size: 32px;
@@ -294,15 +305,11 @@ tournament summary
         padding: 0px;
         font-size: 16px;
     }
-    .teams{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        grid-template-columns: repeat(2,1fr);
-    }
+
     .team img{
         width: 100%;
     }
+    /* changed from grid to flex to make centered  */
     .tournament-summary{
         width: 90%;
         padding: 0px;
